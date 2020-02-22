@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "472894742109",
+    "firebase_url": "https://login-67da3.firebaseio.com",
+    "project_id": "login-67da3",
+    "storage_bucket": "login-67da3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472894742109:android:a1abb2f2bb4e23e2",
+        "android_client_info": {
+          "package_name": "com.discoveregypttourism"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472894742109-2uabkvj0pl9nht1ln6b5ip7lm4gcm33t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEJVYA2NIsjEeLpY10ZpgLDJ6hH434Qx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472894742109-2uabkvj0pl9nht1ln6b5ip7lm4gcm33t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

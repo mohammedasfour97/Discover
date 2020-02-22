@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_hhouse"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/trending"
+        android:icon="@drawable/ic_ttrend"
+        android:title="@string/trending" />
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/message"
+        android:title="@string/message" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/pprofile"
+        android:title="@string/profile" />
+</menu>

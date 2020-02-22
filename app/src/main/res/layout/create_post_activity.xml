@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.discoveregypttourism.SocialComponents.activities.CreatePostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/uswrname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/titleEditText"
+                    android:layout_alignLeft="@+id/titleEditText"
+                    android:layout_alignParentTop="false"
+                    android:layout_margin="10dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/titleEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Governorate"
+                    android:inputType="none|textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:srcCompat="@drawable/ic_image_black_24dp" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/default_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_video_call_black_24dp" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round">
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:hint="@string/hint_description"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.discoveregypttourism">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name="com.discoveregypttourism.Services.NotificationServices"
+            android:enabled="true"></service>
+        <receiver
+            android:name="com.discoveregypttourism.Messenger.service.SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.discoveregypttourism.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.Activities.Splash"
+            android:theme="@style/AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.discoveregypttourism.Activities.ChooseLanguageActivity"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.Activities.ChangePasswordActivity"
+            android:theme="@style/AppCompat.NoActionBar"></activity>
+        <activity android:name="com.discoveregypttourism.Activities.SignupActivity"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.Activities.LoginActivity"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.Activities.ResetPasswordActivity"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.MainActivity"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.CreatePostActivity"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.PostDetailsActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.CreateProfileActivity"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.EditPostActivity"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.EditProfileActivity"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.ImageDetailActivity"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.SocialComponents.activities.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppCompat.NoActionBar"/>
+        <activity android:name="com.discoveregypttourism.Activities.InterestesActivity"
+            android:theme="@style/AppCompat.NoActionBar">
+        </activity>
+        <activity android:name="com.discoveregypttourism.Messenger.ui.ChatActivity"/>
+        <activity android:name="com.discoveregypttourism.Messenger.ui.FriendsList"/>
+        <activity android:name="com.discoveregypttourism.Activities.WelcomeActivity"
+            android:theme="@style/AppCompat.NoActionBar"></activity>
+
+    </application>
+
+</manifest>
